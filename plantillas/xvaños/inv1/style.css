@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -34,4 +35,18 @@ html, body {
     font-size: 2rem;
     color: white;
     position: relative;
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
+}
+
+.goodbye {
+    background-color: #AA5900;
+}
+
+.goodbye img {
+    width: 50vw;
 }
