@@ -1,4 +1,4 @@
-const date = new Date("Dec 26, 2023 17:00:00").getTime();
+const date = new Date("Feb 10, 2024 19:00:00").getTime();
 
 let setCountdown = setInterval(function() {
     let currentDate = new Date().getTime();
@@ -17,25 +17,3 @@ function displayCountdown(days, hours, minutes, seconds) {
     document.getElementById('minutes').innerHTML = minutes + ((minutes === 1) ? " Minuto " : " Minutos ");
     document.getElementById('seconds').innerHTML = seconds + " Segundos ";
 }
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".pintura-arriba", {
-    scrollTrigger: {
-        trigger: ".pintura-arriba",
-        start: "center center",
-        end: "+=200px center",
-        scrub: 1,
-    }, 
-    y: 200,
-});
-
-gsap.to(".pintura-abajo", {
-    scrollTrigger: {
-        trigger: ".pintura-abajo",
-        start: "-=400px center",
-        end: "-=300px center",
-        scrub: 1,
-    }, 
-    y: -200,
-});
