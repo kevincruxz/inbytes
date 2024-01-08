@@ -17,3 +17,15 @@ function displayCountdown(days, hours, minutes, seconds) {
     document.getElementById('minutes').innerHTML = minutes + ((minutes === 1) ? " Minuto " : " Minutos ");
     document.getElementById('seconds').innerHTML = seconds + " Segundos ";
 }
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".donde", {
+    scrollTrigger: {
+        trigger: ".caja-details-donde",
+        start: "top center",
+        end: "center center",
+        scrub: 2,
+    }, 
+    width: "30%",
+});
