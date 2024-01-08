@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mis XV Melany</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="portada">
@@ -29,42 +30,48 @@
         </div>
     </div>
 
-    <div class="intro p-4 d-flex align-items-center text-start">
-        <h3 class="display-1">Tenemos el honor de invitarte a los XV Años de Melany Sanchez</h3>
+    <div class="intro p-4 mt-5 text-start">
+        <img src="img/fieston.png" class="fieston">
+        <h3 class="display-1">Tenemos el honor de invitarlos a celebrar</h3>
     </div>
 
-    <div class="details mb-5">
-        <h1 class="my-5 display-2">Donde y Cuando?</h1>
-        <p class="mx-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet et alias nam a sit excepturi. Ipsum reiciendis sequi, exercitationem, earum optio similique, quam nam debitis error enim aliquid excepturi minima?</p>
+    <div class="details py-5">
+        <h1 class="mb-5 display-2">Donde y Cuando?</h1>
+        <p class="mx-5 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet et alias nam a sit excepturi. Ipsum reiciendis sequi, exercitationem, earum optio similique, quam nam debitis error enim aliquid excepturi minima?</p>
 
-        <div class="caja-details-donde d-flex gap-3 rounded-pill border px-4 mx-3">
-            <div class="border-end d-flex align-items-center p-4 donde justify-content-center">
+        <div class="caja-details-donde d-flex border mx-3 mb-4">
+            <div class="d-flex align-items-center p-4 donde justify-content-center">
                 <h1>Donde</h1>
             </div>
-            <div class="d-flex align-items-center py-4">
-                <p class="txt-donde">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ad eius sequi error est totam vel, eveniet quia placeat ex voluptatibus voluptatem culpa distinctio soluta dolorem, sapiente magnam nobis excepturi.</p>
+            <div class="d-flex align-items-center py-4 lado-txts">
+                <p class="txt-donde"></p>
             </div>
         </div>
-        <br>
-        <div class="caja-details-cuando d-flex gap-3 rounded-pill border px-4 mx-3">
-            <div class="d-flex align-items-center py-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa neque architecto provident.
+
+        <div class="caja-details-cuando d-flex border mx-3 mb-4">
+            <div class="d-flex align-items-center py-4 lado-txts">
+                <p class="txt-cuando"></p>
             </div>
-            <div class="border-start d-flex align-items-center p-4">
+            <div class="border-start d-flex align-items-center p-4 cuando justify-content-center">
                 <h1>Cuando</h1>
             </div>
         </div>
-        <br>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12494.566163697502!2d-87.88977534305738!3d21.40341618211798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f523e461a5bfea1%3A0x7c5148f12c37a7de!2s97707%20Dzonot%20Carretero%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1704608606073!5m2!1ses-419!2smx" width="70%" height="250" style="border: 1px solid #000;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="goodbye">
-        <h1 class="display-1 text-start mt-5">Te esperamos en el evento!</h1>
+        <h1 class="display-1 text-start p-5">Te esperamos en el evento!</h1>
         <img src="img/bailarin.gif" alt="Un Bailador" class="text-end">
         <p class="m-0">© inBytes 2023</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

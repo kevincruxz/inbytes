@@ -19,13 +19,49 @@ function displayCountdown(days, hours, minutes, seconds) {
 }
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(TextPlugin);
 
-gsap.to(".donde", {
+gsap.to('.fieston', {
+    scrollTrigger: {
+        trigger: '.fieston',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: 2,
+    },
+    x: '130vw',
+    rotate: '-25deg',
+})
+
+let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".caja-details-donde",
         start: "top center",
-        end: "center center",
+        end: "+=50px center",
         scrub: 2,
-    }, 
-    width: "30%",
-});
+    }
+})
+
+tl.to('.txt-donde', {
+    duration: 2,
+    text: "This is the new text",
+    ease: "none",
+    paddingX: "10px",
+    width: "55vw",
+})
+
+let tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".caja-details-cuando",
+        start: "center center",
+        end: "+=50px center",
+        scrub: 2,
+    }
+})
+
+tl.to('.txt-cuando', {
+    duration: 2,
+    text: "This is the new text",
+    ease: "none",
+    paddingX: "10px",
+    width: "55vw",
+})
